@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
-  <button onclick="showMessage()">Click Me</button>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <h1>Hi, I'm <span class="highlight">Chhavi Raghav</span></h1>
+    <p>A Front-End Web Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about-text">I specialize in building responsive and user-friendly web interfaces using HTML, CSS, and JavaScript. Passionate about clean code and great UI/UX.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>A dynamic to-do list web application created using HTML, CSS, and vanilla JavaScript. Users can add, delete, and mark tasks as completed. The app stores data in localStorage, ensuring task persistence even after refreshing the page.</p>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <h3>Product Landing Page</h3>
+        <p>A visually appealing landing page designed for a fictional product using HTML and CSS. Includes call-to-action buttons, product sections, and responsive layout. Great emphasis on layout hierarchy and mobile-first design.</p>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chhavi Raghav. All Rights Reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
